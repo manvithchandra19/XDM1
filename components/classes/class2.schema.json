@@ -1,0 +1,37 @@
+{
+	"meta:license": [
+		"Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+		"This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+		"you may not use this file except in compliance with the License. You may obtain a copy of the License at https://creativecommons.org/licenses/by/4.0/"
+	],
+	"$id": "https://ns.adobe.com/xdm/Class/class2",
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"title": "classtitle2",
+	"type": "object",
+	"meta:extensible": true,
+	"meta:abstract": true,
+	"meta:extends": "https://ns.genesis.com/xdm/class2/record",
+	"description": "classdes2",
+	"definitions": {
+		"class2": {
+			"properties": [
+				{
+					"pNs1:pN1": {
+						"title": "pT1",
+						"type": "pd1",
+						"description": "pdes1",
+						"examples": [
+							"m"
+						]
+					}
+				}
+			]
+		}
+	},
+	"allOf": [
+		{
+			"$ref": "#/definitions/class2"
+		}
+	],
+	"meta:Status": "experimental"
+}
