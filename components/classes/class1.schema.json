@@ -6,15 +6,26 @@
 	],
 	"$id": "https://ns.adobe.com/xdm/Class/class1",
 	"$schema": "http://json-schema.org/draft-06/schema#",
-	"title": "",
+	"title": "title1",
 	"type": "object",
 	"meta:extensible": true,
 	"meta:abstract": true,
-	"meta:extends": "https://ns.genesis.com/xdm/class1/",
-	"description": "",
+	"meta:extends": "https://ns.genesis.com/xdm/class1/timeseries",
+	"description": "des1",
 	"definitions": {
 		"class1": {
-			"properties": []
+			"properties": [
+				{
+					"pns1:pn1": {
+						"title": "pt1",
+						"type": "pd1",
+						"description": "pdes",
+						"examples": [
+							"v"
+						]
+					}
+				}
+			]
 		}
 	},
 	"allOf": [
@@ -22,5 +33,5 @@
 			"$ref": "#/definitions/class1"
 		}
 	],
-	"meta:Status": "experimental"
+	"meta:Status": "stable"
 }
